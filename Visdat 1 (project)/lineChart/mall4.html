@@ -17,11 +17,11 @@
 
   <div class="buttons flex justify-start ml-20 lg:ml-52">
     <a href="../home.html"><button type="button" class="focus:outline-none text-black bg-blue-200 hover:bg-blue-500 hover:text-white focus:ring-4 focus:ring-blue-300 font-medium text-xs px-5 py-1.5 mb-6 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-900 ">Home</button></a>
-    <a href="mall1.html"><button type="button" class=" text-black bg-blue-200 hover:bg-blue-500 hover:text-white focus:ring-4 focus:ring-blue-300 font-medium text-xs px-5 py-1.5 mb-6 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-900 ">Cevahir AVM</button></a>
-    <a href="mall2.html"><button type="button" class="focus:outline-none text-black bg-blue-200 hover:bg-blue-500 hover:text-white focus:ring-4 focus:ring-blue-300 font-medium text-xs px-5 py-1.5 mb-6 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-900 ">Emaar Square Mall</button></a>
-    <a href="mall3.html"><button type="button"  class="focus:outline-none text-black bg-blue-200 hover:bg-blue-500 hover:text-white focus:ring-4 focus:ring-blue-300 font-medium text-xs px-5 py-1.5 mb-6 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-900 " >Cevahir AVM</button></a>
-    <a href="mall4.html"><button type="button" class="focus:outline-none text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium text-xs px-5 py-1.5 mb-6 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-900 ">Emaar Square Mall</button></a>
-    <a href="mall5.html"><button type="button" class=" text-black bg-blue-200 hover:bg-blue-500 hover:text-white focus:ring-4 focus:ring-blue-300 font-medium text-xs px-5 py-1.5 mb-6 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-900 ">Cevahir AVM</button></a>
+    <a href="mall1.html"><button type="button" class=" text-black bg-blue-200 hover:bg-blue-500 hover:text-white focus:ring-4 focus:ring-blue-300 font-medium text-xs px-5 py-1.5 mb-6 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-900 ">Emaar Square Mall</button></a>
+    <a href="mall2.html"><button type="button" class="focus:outline-none text-black bg-blue-200 hover:bg-blue-500 hover:text-white focus:ring-4 focus:ring-blue-300 font-medium text-xs px-5 py-1.5 mb-6 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-900 ">Forum Istanbul</button></a>
+    <a href="mall3.html"><button type="button"  class="focus:outline-none text-black bg-blue-200 hover:bg-blue-500 hover:text-white focus:ring-4 focus:ring-blue-300 font-medium text-xs px-5 py-1.5 mb-6 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-900 " >Istinye Park</button></a>
+    <a href="mall4.html"><button type="button" class="focus:outline-none text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium text-xs px-5 py-1.5 mb-6 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-900 ">Kanyon</button></a>
+    <a href="mall5.html"><button type="button" class=" text-black bg-blue-200 hover:bg-blue-500 hover:text-white focus:ring-4 focus:ring-blue-300 font-medium text-xs px-5 py-1.5 mb-6 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-900 ">Mall of Istanbul</button></a>
   </div>
 
   <svg id="line_chart" width="1300" height="600"></svg>
@@ -29,12 +29,14 @@
   <script>
     // Define the data
     var data = [
-      { mall: "April, 2021", pengunjung: 530 },
-      { mall: "August, 2021", pengunjung: 745 },
-      { mall: "December, 2021", pengunjung: 123 },
-      { mall: "April, 2022", pengunjung: 530 },
-      { mall: "August, 2022", pengunjung: 745 },
-      { mall: "December, 2022", pengunjung: 123 },
+      { mall: "Jan-Mar, 2021", pengunjung: 2255 },
+      { mall: "Apr-Jun, 2021", pengunjung: 2180 },
+      { mall: "Jul-Aug, 2021", pengunjung: 2248 },
+      { mall: "Sep-Dec, 2021", pengunjung: 2263 },
+      { mall: "Jan-Mar, 2022", pengunjung: 2208 },
+      { mall: "Apr-Jun, 2022", pengunjung: 2302 },
+      { mall: "Jul-Aug, 2022", pengunjung: 2290 },
+      { mall: "Sep-Dec, 2022", pengunjung: 2353 },
     ];
 
     // Define the chart dimensions
@@ -57,7 +59,7 @@
       .padding(0.01);
 
     var yScale = d3.scaleLinear()
-      .domain([0, d3.max(data, function(d) { return d3.max([1000]); })])
+      .domain([0, d3.max(data, function(d) { return d3.max([2500]); })])
       .range([height, 10]);
       
     // Add axes
