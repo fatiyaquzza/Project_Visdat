@@ -5,22 +5,24 @@
     <meta charset="UTF-8">
     <title>Pie Chart</title>
     <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
 
 </head>
 
 <body>
-    <h3>Persentase metode cara bayar dalam pembelian dalam kurun waktu 2021</h3>
+    <h1 class="mt-6 font-bold text-center mb-10 text-xl">Persentase Cara Bayar Yang Digunakan Customer Saat Membeli Kurun Waktu 2021</h1>
     
     <hr>
-    <div style="margin-top: 25px;">
-    <button id="button1" style="border-radius: 4px; background-color: #a6cee3; height: 40px;">Female</button>
-    <button id="button2" style="border-radius: 4px; background-color: #a6cee3; height: 40px;">Male</button>
+    <div class="flex justify-center mt-4">
+        <a href="piechart.html"><button type="button" class="focus:outline-none text-black bg-blue-200 hover:bg-blue-500 hover:text-white focus:ring-4 focus:ring-blue-300 font-medium text-xs px-5 py-1.5 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-900 ">Home</button></a>
+    <button id="button1" class="focus:outline-none text-black bg-blue-200 hover:bg-blue-500 hover:text-white focus:ring-4 focus:ring-blue-300 font-medium text-xs px-5 py-1.5 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-900 ">Female</button>
+    <button id="button2" class="focus:outline-none text-black bg-blue-200 hover:bg-blue-500 hover:text-white focus:ring-4 focus:ring-blue-300 font-medium text-xs px-5 py-1.5 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-900 ">Male</button>
     </div>
 
-    
-    <div style=" margin-top: 50px; text-align: center" id="piechart"></div>
+    <div class="flex justify-center">
+    <div class="mt-10" id="piechart"></div>
+    </div>
 
-    <a href="piechart.html"><button type="button" style="background-color: #e18c8c; height: 40px; width: 100px; border-radius: 10px;" class="btn btn-primary">Kembali</button></a>
     <script src="script1.js"></script>
 
 </body>
