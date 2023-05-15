@@ -91,13 +91,13 @@ legend.append("text")
   .text(function(d) { return d; });
 
 // make title for the pie chart
-svg.append("text")
-  .attr("x", 0)
-  .attr("y", -180)
-  .attr("text-anchor", "middle")
-  .style("font-size", "20px")
-  .style("text-decoration", "bold")
-  .text("Persentase Cara Bayar Yang Digunakan Customer Saat Membeli");
+// svg.append("text")
+//   .attr("x", 0)
+//   .attr("y", -180)
+//   .attr("text-anchor", "middle")
+//   .style("font-size", "20px")
+//   .style("text-decoration", "bold")
+//   .text("Persentase Cara Bayar Yang Digunakan Customer Saat Membeli");
 
 // make title for the legend
 svg.append("text")
