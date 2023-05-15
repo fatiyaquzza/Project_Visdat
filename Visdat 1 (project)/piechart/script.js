@@ -20,7 +20,7 @@ const data = [2999, 1699, 3826];
 // Set the color scale for the chart
 const color = d3.scaleOrdinal()
   .domain(data)
-  .range(["#643843", "#fc8d62", "#1B9C85"]);
+  .range(["#43a2ca", "#a8ddb5", "#e0f3db"]);
 
 // Set the arc function for the chart
 const arc = d3.arc()
@@ -62,7 +62,7 @@ svg.selectAll("text")
   .attr("transform", function(d) { return "translate(" + arc.centroid(d) + ")"; })
   .style("text-anchor", "middle")
   .style("font-size", 12)
-  .style("fill", "white");
+  .style("fill", "black");
 
 // make legend at the right side of the pie chart
 const legend = svg.selectAll(".legend")
