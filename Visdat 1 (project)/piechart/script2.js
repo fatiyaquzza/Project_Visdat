@@ -20,7 +20,7 @@ const data = [16052, 9119, 20380];
 // Set the color scale for the chart
 const color = d3.scaleOrdinal()
   .domain(data)
-  .range(["#643843", "#fc8d62", "#1B9C85"]);
+  .range(["#43a2ca", "#a8ddb5", "#e0f3db"]);
 
 // Set the arc function for the chart
 const arc = d3.arc()
@@ -62,7 +62,7 @@ svg.selectAll("text")
   .attr("transform", function(d) { return "translate(" + arc.centroid(d) + ")"; })
   .style("text-anchor", "middle")
   .style("font-size", 12)
-  .style("fill", "white");
+  .style("fill", "black");
 
 // make legend at the right side of the pie chart
 const legend = svg.selectAll(".legend")
@@ -122,7 +122,7 @@ function change() {
   // set the color scale for the chart
     const color = d3.scaleOrdinal()
     .domain(value)
-    .range(["#643843", "#fc8d62", "#1B9C85"]);
+    .range(["#43a2ca", "#a8ddb5", "#e0f3db"]);
   
   // set sum data name to the legend
     const dataName = ["Credit Card", "Debit Card", "Cash"];
@@ -165,7 +165,7 @@ function change() {
     .attr("transform", function(d) { return "translate(" + arc.centroid(d) + ")"; })
     .style("text-anchor", "middle")
     .style("font-size", 12)
-    .style("fill", "white");
+    .style("fill", "black");
 }
 
 // make button to change the value of the pie chart
@@ -182,7 +182,7 @@ function change1() {
     // set the color scale for the chart
         const color = d3.scaleOrdinal()
         .domain(value)
-        .range(["#643843", "#fc8d62", "#1B9C85"]);
+        .range(["#43a2ca", "#a8ddb5", "#e0f3db"]);
 
     // set sum data name to the legend
         const dataName = ["Credit Card", "Debit Card", "Cash"];    // change legend value
@@ -224,5 +224,5 @@ function change1() {
         .attr("transform", function(d) { return "translate(" + arc.centroid(d) + ")"; })
         .style("text-anchor", "middle")
         .style("font-size", 12)
-        .style("fill", "white");
+        .style("fill", "black");
 }
